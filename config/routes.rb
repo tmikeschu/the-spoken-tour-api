@@ -4,4 +4,6 @@ Rails.application.routes.draw do
       resources :route_pins, only: [:index]
     end
   end
+
+  root to: "home#show"
 end

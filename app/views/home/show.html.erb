@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Spoken Tour Api</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <h1>Welcome to the API for The Spoken Tour!</h1>
+    <h3>Endpoints:</h3>
+    <ul>
+    <% Rails.application.routes.routes.each do |route| %>
+      <% if route.path.spec.to_s.starts_with?("/api") %>
+          <li>
+            <%= route.verb.to_s.gsub("$)", "").gsub("(?-mix:^", "") %>
+            <%= route.path.spec.to_s.gsub("(.:format)", "") %>
+          </li>
+      <% end %>
+    <% end %>
+    </ul>
+  </body>
+</html>
