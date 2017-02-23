@@ -8,13 +8,14 @@ Rails.application.load_tasks
 namespace :route_pins do
   desc "Convert KML coordinates to RoutePin objects"
   task :create_db_objects => :environment do
-=begin
-doc = Nokogiri::XML(file)
-points = doc.search("coordinates").text.gsub(" ", "").split("\n").reject(&:empty?)
-points.each do |point|
-lat, lng = point.split(",")[0,1]
-RoutePin.create!(lat: lat, lng: lng)
-puts "Pin created at #{lat}, #{long}"
-=end
+    raw_kml          = File.read("./db/route-pins.kml")
+    parsed_kml       = Nokogiri::XML(raw_kml)
+    raw_route_points = parsed_kml.search("coordinates").text.gsub(" ", "").split("\n").reject(&:empty?)
+
+    raw_route_points.each do |point|
+      lng, lat = point.split(",")[0..1]
+      RoutePin.create!(lat: lat, lng: lng)
+      puts "Pin ##{RoutePin.last.id} created at #{lat}, #{lng}"
+    end
   end
 end

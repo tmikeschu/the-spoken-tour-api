@@ -5,7 +5,7 @@ RSpec.describe RoutePinSerializer do
     pin        = create(:route_pin)
     serializer = RoutePinSerializer.new(pin)
     json_pin   = JSON.parse(ActiveModelSerializers::Adapter.create(serializer).to_json)
-    expect(json_pin["location"]["lat"]).to eq pin.lat
-    expect(json_pin["location"]["lng"]).to eq pin.lng
+    expect(json_pin["location"]["lat"]).to eq pin.lat.to_s
+    expect(json_pin["location"]["lng"]).to eq pin.lng.to_s
   end
 end
