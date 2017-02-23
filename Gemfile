@@ -11,6 +11,7 @@ gem 'puma', '~> 3.0'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'figaro'
 gem 'faraday'
+gem 'faker'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
@@ -18,6 +19,7 @@ gem 'faraday'
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl_rails'
 end
 
 group :development do

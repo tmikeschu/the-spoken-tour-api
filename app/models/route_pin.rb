@@ -1,0 +1,2 @@
+class RoutePin < ApplicationRecord
+end
