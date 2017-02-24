@@ -1,10 +1,13 @@
 require "rails_helper"
 
-RSpec.describe "Route Pins API", type: :request do
-  let!(:points) { create_list(:route_pin, 5) }
+RSpec.describe "Denver to Carlsbad endpoint", type: :request do
+  before do
+    create_list(:route_pin, 3, route_leg: 0)
+    create_list(:route_pin, 2, route_leg: 1)
+  end
 
   it "returns a collection of lat and lng points" do
-    get api_v1_route_pins_path, params: { api_key: ENV["api_key"] }
+    get api_v1_route_pins_denver_to_carlsbad_path, params: { api_key: ENV["api_key"] }
 
     expect(response).to be_success
 
@@ -12,7 +15,7 @@ RSpec.describe "Route Pins API", type: :request do
     point    = points.first
     db_point = RoutePin.first
 
-    expect(points.count).to eq 5
+    expect(points.count).to eq 3
 
     expect(point).to have_key(:location)
     expect(point[:location]).to have_key(:lat)
@@ -22,13 +25,13 @@ RSpec.describe "Route Pins API", type: :request do
   end
 
   it "returns a 401 if api key is missing" do
-    get api_v1_route_pins_path
+    get api_v1_route_pins_denver_to_carlsbad_path
 
     expect(response.status).to eq 401
   end
 
   it "returns a 401 if api key is incorrect" do
-    get api_v1_route_pins_path, params: { api_key: "h4a12cba-b75d-486c-ae7e-196;lk2f4778" }
+    get api_v1_route_pins_denver_to_carlsbad_path, params: { api_key: "h4a12cba-b75d-486c-ae7e-196;lk2f4778" }
 
     expect(response.status).to eq 401
   end
