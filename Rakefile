@@ -10,7 +10,7 @@ namespace :route_pins do
   task :create_db_objects => :environment do
     raw_kml          = File.read("./db/route-pins.kml")
     parsed_kml       = Nokogiri::XML(raw_kml)
-    raw_route_points = parsed_kml.search("coordinates").text.gsub(" ", "").split("\n").reject(&:empty?)
+    raw_route_points = parsed_kml.search("coordinates").text.gsub(" ", "").split("\n").reject(&:empty?).uniq
 
     raw_route_points.each do |point|
       lng, lat = point.split(",")[0..1]
