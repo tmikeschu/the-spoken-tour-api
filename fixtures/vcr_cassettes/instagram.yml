@@ -1,0 +1,142 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.instagram.com/thespokentour/media/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Pragma:
+      - no-cache
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - application/json
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      Content-Language:
+      - en
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Strict-Transport-Security:
+      - max-age=86400
+      Date:
+      - Sun, 26 Feb 2017 15:47:12 GMT
+      Set-Cookie:
+      - csrftoken=y8YDpCH362nQgb5iUhC19aUG6U9gytX2; expires=Sun, 25-Feb-2018 15:47:12
+        GMT; Max-Age=31449600; Path=/; Secure
+      - mid=WLL4gAAEAAHjXCJjDc36c_an9Xkt; expires=Sat, 21-Feb-2037 15:47:12 GMT; Max-Age=630720000;
+        Path=/
+      - s_network=""; expires=Sun, 26-Feb-2017 16:47:12 GMT; Max-Age=3600; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '803'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "ok", "items": [{"id": "1455919650315878613_4690018464",
+        "caption": {"from": {"full_name": "", "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour", "id": "4690018464"}, "text": "The adventure starts
+        May 8th as we bicycle from #DenverToPatagonia!", "created_time": "1487779168",
+        "id": "17850670267147512"}, "link": "https://www.instagram.com/p/BQ0dzVKlsDV/",
+        "alt_media_url": null, "user": {"full_name": "", "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour", "id": "4690018464"}, "likes": {"count": 5, "data":
+        [{"full_name": "Tiffany Bush | Yoga Teacher", "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/13703103_1831125547118538_1992668786_a.jpg",
+        "username": "peacewarriorfitness", "id": "434830368"}, {"full_name": "", "profile_picture":
+        "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour", "id": "4690018464"}, {"full_name": "Tyler Michael",
+        "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/11375832_1484658395186636_1543664617_a.jpg",
+        "username": "t_y_l_e_r_michael", "id": "8600475"}, {"full_name": "Elle.b Salon",
+        "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/11098716_953885117964574_61517949_a.jpg",
+        "username": "ellebsalon", "id": "2038017580"}]}, "can_delete_comments": false,
+        "code": "BQ0dzVKlsDV", "created_time": "1487779168", "can_view_comments":
+        true, "location": {"name": "Denver, Colorado"}, "type": "image", "images":
+        {"low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-2.cdninstagram.com/t51.2885-15/s320x320/e35/16906259_1432873057012165_5159932404713914368_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-2.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/16906259_1432873057012165_5159932404713914368_n.jpg"},
+        "thumbnail": {"width": 150, "height": 150, "url": "https://scontent-dft4-2.cdninstagram.com/t51.2885-15/s150x150/e35/16906259_1432873057012165_5159932404713914368_n.jpg"}},
+        "comments": {"count": 0, "data": []}}], "more_available": false}'
+    http_version: 
+  recorded_at: Sun, 26 Feb 2017 15:47:12 GMT
+- request:
+    method: get
+    uri: https://www.instagram.com/thespokentour/media/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Date:
+      - Sun, 26 Feb 2017 15:47:20 GMT
+      Content-Type:
+      - application/json
+      Content-Language:
+      - en
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Strict-Transport-Security:
+      - max-age=86400
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - csrftoken=80pdRQmTwGhmH0Rmnseg7ZN1i1o7QRrN; expires=Sun, 25-Feb-2018 15:47:20
+        GMT; Max-Age=31449600; Path=/; Secure
+      - mid=WLL4iAAEAAHuXEDA-hMG0ouPi1p1; expires=Sat, 21-Feb-2037 15:47:20 GMT; Max-Age=630720000;
+        Path=/
+      - s_network=""; expires=Sun, 26-Feb-2017 16:47:20 GMT; Max-Age=3600; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '798'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"items": [{"code": "BQ0dzVKlsDV", "created_time": "1487779168", "user":
+        {"username": "thespokentour", "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "full_name": "", "id": "4690018464"}, "location": {"name": "Denver, Colorado"},
+        "can_view_comments": true, "images": {"standard_resolution": {"url": "https://scontent-dft4-2.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/16906259_1432873057012165_5159932404713914368_n.jpg",
+        "height": 640, "width": 640}, "low_resolution": {"url": "https://scontent-dft4-2.cdninstagram.com/t51.2885-15/s320x320/e35/16906259_1432873057012165_5159932404713914368_n.jpg",
+        "height": 320, "width": 320}, "thumbnail": {"url": "https://scontent-dft4-2.cdninstagram.com/t51.2885-15/s150x150/e35/16906259_1432873057012165_5159932404713914368_n.jpg",
+        "height": 150, "width": 150}}, "link": "https://www.instagram.com/p/BQ0dzVKlsDV/",
+        "type": "image", "comments": {"count": 0, "data": []}, "alt_media_url": null,
+        "caption": {"created_time": "1487779168", "from": {"username": "thespokentour",
+        "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "full_name": "", "id": "4690018464"}, "text": "The adventure starts May 8th
+        as we bicycle from #DenverToPatagonia!", "id": "17850670267147512"}, "can_delete_comments":
+        false, "likes": {"count": 5, "data": [{"username": "peacewarriorfitness",
+        "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/13703103_1831125547118538_1992668786_a.jpg",
+        "full_name": "Tiffany Bush | Yoga Teacher", "id": "434830368"}, {"username":
+        "thespokentour", "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "full_name": "", "id": "4690018464"}, {"username": "t_y_l_e_r_michael", "profile_picture":
+        "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/11375832_1484658395186636_1543664617_a.jpg",
+        "full_name": "Tyler Michael", "id": "8600475"}, {"username": "ellebsalon",
+        "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/11098716_953885117964574_61517949_a.jpg",
+        "full_name": "Elle.b Salon", "id": "2038017580"}]}, "id": "1455919650315878613_4690018464"}],
+        "status": "ok", "more_available": false}'
+    http_version: 
+  recorded_at: Sun, 26 Feb 2017 15:47:19 GMT
+recorded_with: VCR 3.0.3

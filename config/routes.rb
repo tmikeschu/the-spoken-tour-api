@@ -7,6 +7,7 @@ Rails.application.routes.draw do
         get '/costa_rica_to_darien_gap', to: "costa_rica_to_darien_gap#index"
         get '/darien_gap_to_cabo_froward', to: "darien_gap_to_cabo_froward#index"
       end
+      get '/instagram_photos', to: "instagram_photos#index"
     end
   end
 
