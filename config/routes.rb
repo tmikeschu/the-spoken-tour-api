@@ -10,6 +10,9 @@ Rails.application.routes.draw do
       get '/instagram_photos', to: "instagram_photos#index"
 
       resources :suggestion_pins, only: [:index, :create, :show]
+
+      get '/current_location', to: "current_location_pin#show"
+      post '/current_location', to: "current_location_pin#create"
     end
   end
 
