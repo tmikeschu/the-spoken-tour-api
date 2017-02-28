@@ -8,6 +8,8 @@ Rails.application.routes.draw do
         get '/darien_gap_to_cabo_froward', to: "darien_gap_to_cabo_froward#index"
       end
       get '/instagram_photos', to: "instagram_photos#index"
+
+      resources :suggestion_pins, only: [:index, :create, :show]
     end
   end
 

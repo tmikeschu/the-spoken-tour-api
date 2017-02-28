@@ -7,7 +7,8 @@ RSpec.describe "Denver to Carlsbad endpoint", type: :request do
   end
 
   it "returns a collection of lat and lng points" do
-    get api_v1_route_pins_denver_to_carlsbad_path, params: { api_key: ENV["api_key"] }
+    allow_any_instance_of(ApplicationController).to receive(:authorized?).and_return(true)
+    get api_v1_route_pins_denver_to_carlsbad_path
 
     expect(response).to be_success
 

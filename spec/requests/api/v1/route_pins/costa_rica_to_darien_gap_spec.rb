@@ -4,10 +4,11 @@ RSpec.describe "Costa Rica to Darien Gap endpoint", type: :request do
   before do
     create_list(:route_pin, 3, route_leg: 2)
     create_list(:route_pin, 2, route_leg: 0)
+    allow_any_instance_of(ApplicationController).to receive(:authorized?).and_return(true)
   end
 
   it "returns a collection of lat and lng points" do
-    get api_v1_route_pins_costa_rica_to_darien_gap_path, params: { api_key: ENV["api_key"] }
+    get api_v1_route_pins_costa_rica_to_darien_gap_path
 
     expect(response).to be_success
 

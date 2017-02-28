@@ -2,7 +2,6 @@ class ApplicationController < ActionController::API
   before_action :authenticate_request
 
   private
-
     def authenticate_request
       render json: { error: 'Not Authorized' }, status: 401 unless authorized?
     end

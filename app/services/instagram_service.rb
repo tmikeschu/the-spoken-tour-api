@@ -14,7 +14,6 @@ class InstagramService
   end
 
   private
-
     def conn
       @conn ||= Faraday.new("https://www.instagram.com")
     end
