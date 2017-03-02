@@ -1,4 +1,4 @@
-# API for [The Spoken Tour](http://spoke-n.herokuapp.com/)
+# API for [The Spoken Tour](http://www.thespokentour.com/)
 
 This is a simple API built with Rails and for a front-end React application.
 
