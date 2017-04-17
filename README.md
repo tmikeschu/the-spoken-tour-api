@@ -1,4 +1,4 @@
-# API for [The Spoken Tour](http://spoke-n.herokuapp.com/)
+# API for [The Spoken Tour](http://www.thespokentour.com/)
 
 This is a simple API built with Rails and for a front-end React application.
 
@@ -17,5 +17,6 @@ clear & rspec
 open http://localhost:3000
 ```
 
-*Note*
+*Note
+
 The rake tasks are designed for KML files located in the DB. The original files I worked with resulted in over 50_000 database rows of coordinates, which Heroku didn't like. I removed the KML files to prevent this problem. If you want to load KML files to provide route coordinates for drawing Google Maps Polylines, let me know (or upload your own files to `./db`)!
