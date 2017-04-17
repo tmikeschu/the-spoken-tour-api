@@ -6,7 +6,6 @@ class Api::V1::SuggestionPinsController < ApplicationController
   def create
     pin = SuggestionPin.new(pin_params)
     if pin.save!
-      SuggestionMailer.suggestion(pin).deliver
       render json: pin, status: 201
     else
       render json: pin.errors.full_messages.join(", ")
