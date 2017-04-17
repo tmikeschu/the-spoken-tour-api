@@ -1,5 +1,5 @@
 class SuggestionMailer < ApplicationMailer
-  default from: 'no-reply@mikeschutte.com'
+  default from: 'tmikeschutte@gmail.com'
 
   def suggestion(pin)
     @pin = pin
