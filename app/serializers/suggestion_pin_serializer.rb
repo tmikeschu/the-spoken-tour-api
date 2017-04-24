@@ -1,5 +1,5 @@
 class SuggestionPinSerializer < ActiveModel::Serializer
-  attributes :id, :label, :location, :description, :message, :category
+  attributes :id, :label, :location, :description, :category
 
   def location
     {
