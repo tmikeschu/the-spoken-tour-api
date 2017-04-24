@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Hey Spokers!</h1>
+		<p>You received a new suggestion pin on thespokentour.com/map !</p>
+    <p>
+			Here are the deets:
+			<ul>
+        <li>
+          From: <%= @pin.name %>
+        </li>
+        <li>
+          At: <%= @pin.email %>
+        </li>
+        <li>
+          Lat: <%= @pin.lat %>
+        </li>
+        <li>
+          Long: <%= @pin.lng %>
+        </li>
+        <li>
+          Label: <%= @pin.label %>
+        </li>
+        <li>
+          Category: <%= @pin.category %>
+        </li>
+        <li>
+          Description: <%= @pin.description %>
+        </li>
+        <li>
+          Message: <%= @pin.message %>
+        </li>
+        <li>
+          Lat: <%= @pin.lat %>
+        </li>
+			</ul>
+    </p>
+    <p>Remember, Mike Schutte loves you both!</p>
+  </body>
+</html>
