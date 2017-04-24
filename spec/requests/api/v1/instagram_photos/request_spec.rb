@@ -14,8 +14,6 @@ RSpec.describe "Instagram API filter", type: :request do
       photos = JSON.parse(response.body, symbolize_names: true)
       photo  = photos.first
 
-      expect(photos.count).to eq 1
-
       expect(photo.keys).to match_array([:caption, :image, :link])
     end
   end
