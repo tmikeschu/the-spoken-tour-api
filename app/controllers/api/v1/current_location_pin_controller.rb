@@ -1,7 +1,12 @@
 class Api::V1::CurrentLocationPinController < ApplicationController
   def show
-    latest_update = CurrentLocationPin.maximum(:updated_at)
-    render json: CurrentLocationPin.where(updated_at: latest_update).first
+    pin_params = InreachService.latest_coordinates
+    pin = CurrentLocationPin.new(pin_params)
+    if pin.save!
+      render json: pin, status: 201
+    else
+      render json: pin.errors.full_messages.join(", ")
+    end
   end
 
   def create
@@ -18,3 +23,4 @@ class Api::V1::CurrentLocationPinController < ApplicationController
       params.require(:pin).permit(:lat, :lng)
     end
 end
+
