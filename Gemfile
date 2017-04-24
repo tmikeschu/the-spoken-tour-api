@@ -13,6 +13,8 @@ gem 'figaro'
 gem 'faraday'
 gem 'faker'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'delayed_job_active_record'
+gem "daemons"
 
 group :development, :test do
   gem 'pry'

@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: spoken-api_production
-  username: spoken-api
+  username: spoken_api
   password: <%= ENV['SPOKEN-API_DATABASE_PASSWORD'] %>
