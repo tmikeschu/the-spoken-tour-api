@@ -18,25 +18,26 @@ RSpec.describe "Suggestion Pins API" do
     expect(pins.count).to eq 5
 
     expected_keys = [
-      :id, :category, :label, :location, :description, :message
+      :id, :category, :label, :location, :description
     ]
     expect(pin.keys).to match_array(expected_keys)
   end
 
   it "posts a new suggestion pin" do
     pin_params = {
-      category: 1,
-      description: "This is an awesome restaurant",
-      message: "You guys should talk to my friend there",
-      lat: 39.1234,
-      lng: -135.20995,
-      label: "Hot restaurant"
-    }
-    post_params = {
-      pin: pin_params
+      pin: {
+        category: 1,
+        description: "This is an awesome restaurant",
+        message: "You guys should talk to my friend there",
+        lat: 39.1234,
+        lng: -135.20995,
+        label: "Hot restaurant",
+        name: "Mike",
+        email: "mike@schutte.com"
+      }
     }
 
-    post api_v1_suggestion_pins_path, params: post_params
+    post api_v1_suggestion_pins_path, params: pin_params
 
     expect(response).to be_success
     expect(response.status).to eq 201
@@ -46,9 +47,15 @@ RSpec.describe "Suggestion Pins API" do
     expect(json_pin[:id]).to eq db_pin.id
 
     expected_keys = [
-      :id, :category, :label, :location, :description, :message
+      :id, :category, :label, :location, :description
     ]
     expect(json_pin.keys).to match_array(expected_keys)
+
+    pin_params[:pin].each do |attr, value|
+      unless attr == :category
+        expect(db_pin.send(attr)).to eq value
+      end
+    end
   end
 
   it "shows a single pin's information" do
@@ -63,7 +70,7 @@ RSpec.describe "Suggestion Pins API" do
     expect(json_pin[:id]).to eq db_pin.id
 
     expected_keys = [
-      :id, :category, :label, :location, :description, :message
+      :id, :category, :label, :location, :description
     ]
     expect(json_pin.keys).to match_array(expected_keys)
   end
