@@ -16,3 +16,4 @@ RSpec.describe InstagramService do
     end
   end
 end
+

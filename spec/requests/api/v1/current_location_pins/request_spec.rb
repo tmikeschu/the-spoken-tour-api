@@ -6,20 +6,19 @@ RSpec.describe "Current Location Pins API" do
   end
 
   it "returns the latest location" do
-    create_list(:current_location_pin, 5)
-    latest = create(:current_location_pin)
+    VCR.use_cassette("inreach") do
+      get api_v1_current_location_path
 
-    get api_v1_current_location_path
+      expect(response).to be_success
 
-    expect(response).to be_success
+      json_pin      = JSON.parse(response.body, symbolize_names: true)
+      latest_update = CurrentLocationPin.maximum(:updated_at)
+      latest_pin    = CurrentLocationPin.where(updated_at: latest_update).first
+      expected_keys = [:id, :location, :date]
 
-    json_pin      = JSON.parse(response.body, symbolize_names: true)
-    latest_update = CurrentLocationPin.maximum(:updated_at)
-    latest_pin    = CurrentLocationPin.where(updated_at: latest_update).first
-    expected_keys = [:id, :location, :date]
-
-    expect(json_pin.keys).to match_array(expected_keys)
-    expect(json_pin[:id]).to eq(latest_pin.id)
+      expect(json_pin.keys).to match_array(expected_keys)
+      expect(json_pin[:id]).to eq(latest_pin.id)
+    end
   end
 
   it "posts a new current location" do
