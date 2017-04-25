@@ -1,7 +1,7 @@
 class Api::V1::CurrentLocationPinController < ApplicationController
   def show
     pin_params = InreachService.latest_coordinates
-    pin = CurrentLocationPin.new(pin_params)
+    pin = CurrentLocationPin.find_or_initialize_by(pin_params)
     if pin.save!
       render json: pin, status: 201
     else
