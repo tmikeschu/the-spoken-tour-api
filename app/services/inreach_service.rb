@@ -23,11 +23,11 @@ class InreachService
     end
 
     def latitude
-      Nokogiri.XML(response_data).css("Data[name='Latitude'] value").text.to_f
+      Nokogiri.XML(response_data).css("Data[name='Latitude'] value").text.to_d
     end
 
     def longitude
-      Nokogiri.XML(response_data).css("Data[name='Longitude'] value").text.to_f
+      Nokogiri.XML(response_data).css("Data[name='Longitude'] value").text.to_d
     end
 end
 

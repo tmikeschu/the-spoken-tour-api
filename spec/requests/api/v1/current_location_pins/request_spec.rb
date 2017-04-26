@@ -21,6 +21,16 @@ RSpec.describe "Current Location Pins API" do
     end
   end
 
+  it "only makes a new pin if the coordinates are new" do
+    VCR.use_cassette("inreach", allow_playback_repeats: true) do
+      get api_v1_current_location_path
+      expect(CurrentLocationPin.count).to eq 1
+
+      get api_v1_current_location_path
+      expect(CurrentLocationPin.count).to eq 1
+    end
+  end
+
   it "posts a new current location" do
     create_list(:current_location_pin, 5)
 
