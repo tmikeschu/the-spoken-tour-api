@@ -4,7 +4,12 @@ class InreachService
   end
 
   def latest_coordinates
-    { lat: latitude, lng: longitude }  
+    { 
+      location: {
+        lat: latitude, lng: longitude
+      },
+      date: date
+    }  
   end
 
   private 
@@ -28,6 +33,10 @@ class InreachService
 
     def longitude
       Nokogiri.XML(response_data).css("Data[name='Longitude'] value").text.to_d
+    end
+
+    def date
+      Nokogiri.XML(response_data).css("Data[name='Time'] value").text
     end
 end
 
