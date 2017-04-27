@@ -7,7 +7,8 @@ RSpec.describe InreachService do
         VCR.use_cassette("inreach") do
           result = InreachService.latest_coordinates
 
-          expect(result.keys).to match_array [:lat, :lng]
+          expect(result.keys).to match_array [:date, :location]
+          expect(result[:location].keys).to match_array [:lat, :lng]
         end
       end
     end
