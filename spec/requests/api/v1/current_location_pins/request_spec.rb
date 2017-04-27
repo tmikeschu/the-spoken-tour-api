@@ -5,19 +5,37 @@ RSpec.describe "Current Location Pins API" do
     allow_any_instance_of(ApplicationController).to receive(:authorized?).and_return(true)
   end
 
-  it "returns the latest location" do
-    VCR.use_cassette("inreach") do
-      get api_v1_current_location_path
+  describe "GET /api/v1/current_location" do
+    it "returns the latest location" do
+      VCR.use_cassette("inreach") do
+        get api_v1_current_location_path
 
-      expect(response).to be_success
+        expect(response).to be_success
 
-      json_pin      = JSON.parse(response.body, symbolize_names: true)
-      latest_update = CurrentLocationPin.maximum(:updated_at)
-      latest_pin    = CurrentLocationPin.where(updated_at: latest_update).first
-      expected_keys = [:id, :location, :date]
+        json_pin      = JSON.parse(response.body, symbolize_names: true)
+        expected_keys = [:location, :date]
 
-      expect(json_pin.keys).to match_array(expected_keys)
-      expect(json_pin[:id]).to eq(latest_pin.id)
+        expect(json_pin.keys).to match_array(expected_keys)
+      end
+    end
+
+    it "adds a location to the database" do
+      VCR.use_cassette("inreach") do
+        expect(CurrentLocationPin.count).to eq 0
+
+        get api_v1_current_location_path
+        expect(CurrentLocationPin.count).to eq 1
+      end
+    end
+
+    it "does not add a db record for the same day" do
+      VCR.use_cassette("inreach", allow_playback_repeats: true) do
+        get api_v1_current_location_path
+        expect(CurrentLocationPin.count).to eq 1
+
+        get api_v1_current_location_path
+        expect(CurrentLocationPin.count).to eq 1
+      end
     end
   end
 
