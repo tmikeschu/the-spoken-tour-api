@@ -1,4 +1,4 @@
-require "CSV"
+require "csv"
 
 namespace :route_pins do
   desc "Load pins"
