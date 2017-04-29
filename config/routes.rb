@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
       get '/current_location', to: "current_location_pin#show"
       post '/current_location', to: "current_location_pin#create"
+      post '/contact', to: "contact#create"
     end
   end
 
