@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe ContactMailer, type: :mailer do
-  describe ".send" do
+  describe ".contact" do
     let(:contact_data) { 
       { name: "Tyler", email: "tommy@crosby.com", message: "Hello!" }
     } 
