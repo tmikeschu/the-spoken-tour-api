@@ -18,6 +18,11 @@ class Api::V1::CurrentLocationPinController < ApplicationController
     end
   end
 
+  def index
+    @points = CurrentLocationPin.all
+    render json: @points
+  end
+
   private
     def pin_params
       params.require(:pin).permit(:lat, :lng)
