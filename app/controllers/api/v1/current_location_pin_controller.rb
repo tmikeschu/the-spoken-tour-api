@@ -19,7 +19,7 @@ class Api::V1::CurrentLocationPinController < ApplicationController
   end
 
   def index
-    @points = CurrentLocationPin.all
+    @points = CurrentLocationPin.by_date
     render json: @points
   end
 
