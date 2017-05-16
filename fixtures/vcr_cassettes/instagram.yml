@@ -31,16 +31,16 @@ http_interactions:
       Content-Language:
       - en
       Date:
-      - Tue, 16 May 2017 16:11:21 GMT
+      - Tue, 16 May 2017 16:14:28 GMT
       Strict-Transport-Security:
       - max-age=86400
       Set-Cookie:
-      - csrftoken=mf0qeuwuK5yaS3JLc5VkcBL1BqXqOWm0; expires=Tue, 15-May-2018 16:11:21
+      - csrftoken=Y2Vmichvme5dN1qf6miiU47g4nNbPfsI; expires=Tue, 15-May-2018 16:14:28
         GMT; Max-Age=31449600; Path=/; Secure
-      - mid=WRskqQAEAAGCBnRACHUjzR2KxHf4; expires=Mon, 11-May-2037 16:11:21 GMT; Max-Age=630720000;
+      - mid=WRslYwAEAAEvoMUspKvavCcf5krR; expires=Mon, 11-May-2037 16:14:28 GMT; Max-Age=630720000;
         Path=/
       - rur=ATN; Path=/
-      - s_network=""; expires=Tue, 16-May-2017 17:11:21 GMT; Max-Age=3600; Path=/
+      - s_network=""; expires=Tue, 16-May-2017 17:14:28 GMT; Max-Age=3600; Path=/
       Connection:
       - keep-alive
       Content-Length:
@@ -513,5 +513,5 @@ http_interactions:
         "location": {"name": "Denver, Colorado"}, "alt_media_url": null}], "more_available":
         false, "status": "ok"}'
     http_version: 
-  recorded_at: Tue, 16 May 2017 16:11:20 GMT
+  recorded_at: Tue, 16 May 2017 16:14:27 GMT
 recorded_with: VCR 3.0.3
