@@ -15,7 +15,7 @@ class InreachService
   private 
     def conn
       @conn ||= Faraday.new("https://inreach.garmin.com")
-      @conn.basic_auth("tommycrosby26@gmail.com", "Socksthecat852!")
+      @conn.basic_auth(ENV["inreach_user"], ENV["inreach_pw"])
       @conn
     end
 

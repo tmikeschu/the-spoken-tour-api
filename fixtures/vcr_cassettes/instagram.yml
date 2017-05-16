@@ -18,125 +18,500 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Content-Type:
+      - application/json
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
       Pragma:
       - no-cache
       Expires:
       - Sat, 01 Jan 2000 00:00:00 GMT
-      Content-Type:
-      - application/json
       Vary:
       - Cookie, Accept-Language, Accept-Encoding
       Content-Language:
       - en
-      Cache-Control:
-      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Tue, 16 May 2017 15:50:01 GMT
       Strict-Transport-Security:
       - max-age=86400
-      Date:
-      - Sun, 26 Feb 2017 15:47:12 GMT
       Set-Cookie:
-      - csrftoken=y8YDpCH362nQgb5iUhC19aUG6U9gytX2; expires=Sun, 25-Feb-2018 15:47:12
+      - csrftoken=3nJZwJmLVMUhLEuCS6MTBeGHP46tgAhw; expires=Tue, 15-May-2018 15:50:01
         GMT; Max-Age=31449600; Path=/; Secure
-      - mid=WLL4gAAEAAHjXCJjDc36c_an9Xkt; expires=Sat, 21-Feb-2037 15:47:12 GMT; Max-Age=630720000;
+      - mid=WRsfqQAEAAEF6phmzAoN6ab_UrfI; expires=Mon, 11-May-2037 15:50:01 GMT; Max-Age=630720000;
         Path=/
-      - s_network=""; expires=Sun, 26-Feb-2017 16:47:12 GMT; Max-Age=3600; Path=/
+      - rur=ATN; Path=/
+      - s_network=""; expires=Tue, 16-May-2017 16:50:01 GMT; Max-Age=3600; Path=/
       Connection:
       - keep-alive
       Content-Length:
-      - '803'
+      - '9857'
     body:
       encoding: ASCII-8BIT
-      string: '{"status": "ok", "items": [{"id": "1455919650315878613_4690018464",
-        "caption": {"from": {"full_name": "", "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
-        "username": "thespokentour", "id": "4690018464"}, "text": "The adventure starts
-        May 8th as we bicycle from #DenverToPatagonia!", "created_time": "1487779168",
-        "id": "17850670267147512"}, "link": "https://www.instagram.com/p/BQ0dzVKlsDV/",
-        "alt_media_url": null, "user": {"full_name": "", "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
-        "username": "thespokentour", "id": "4690018464"}, "likes": {"count": 5, "data":
-        [{"full_name": "Tiffany Bush | Yoga Teacher", "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/13703103_1831125547118538_1992668786_a.jpg",
-        "username": "peacewarriorfitness", "id": "434830368"}, {"full_name": "", "profile_picture":
-        "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
-        "username": "thespokentour", "id": "4690018464"}, {"full_name": "Tyler Michael",
-        "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/11375832_1484658395186636_1543664617_a.jpg",
-        "username": "t_y_l_e_r_michael", "id": "8600475"}, {"full_name": "Elle.b Salon",
-        "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/11098716_953885117964574_61517949_a.jpg",
-        "username": "ellebsalon", "id": "2038017580"}]}, "can_delete_comments": false,
-        "code": "BQ0dzVKlsDV", "created_time": "1487779168", "can_view_comments":
-        true, "location": {"name": "Denver, Colorado"}, "type": "image", "images":
-        {"low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-2.cdninstagram.com/t51.2885-15/s320x320/e35/16906259_1432873057012165_5159932404713914368_n.jpg"},
-        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-2.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/16906259_1432873057012165_5159932404713914368_n.jpg"},
-        "thumbnail": {"width": 150, "height": 150, "url": "https://scontent-dft4-2.cdninstagram.com/t51.2885-15/s150x150/e35/16906259_1432873057012165_5159932404713914368_n.jpg"}},
-        "comments": {"count": 0, "data": []}}], "more_available": false}'
+      string: '{"items": [{"id": "1515615441153982196_4690018464", "code": "BUIjDayFH70",
+        "user": {"id": "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e35/c135.0.810.810/18512698_287484301702571_689507216406872064_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e35/c135.0.810.810/18512698_287484301702571_689507216406872064_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c135.0.810.810/18512698_287484301702571_689507216406872064_n.jpg"}},
+        "created_time": "1494895461", "caption": {"id": "17881055164044143", "text":
+        "Restored by the mystical spirit energy of Mt. Sopris (pictured behind us)
+        and a metric ton of mac''n''cheese, we finished up Episode 2 of our #podcast!
+        \nIt''s available now on our website (link in bio), SoundCloud, and iTunes.
+        Give it a listen and get at us with some feedback! \nNow on to conquer the
+        San Juan''s...or just try to survive them at least. \n#DTeam #DenverToPatagonia
+        #bikepacking #biketouring #soundcloud", "created_time": "1494895461", "from":
+        {"id": "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "16759958", "full_name":
+        "Allie Finnegan", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/13267507_1111157252255769_2024515740_a.jpg",
+        "username": "afinnn"}, {"id": "181578457", "full_name": "Stephen Stanis",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/14359938_255021131565381_3813671121916526592_a.jpg",
+        "username": "stanisbaratheon1"}, {"id": "1446577497", "full_name": "Halter
+        Cunningham", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/17076220_404484983263975_4955595706359349248_a.jpg",
+        "username": "haltwhogoesthur"}, {"id": "220959037", "full_name": "Tori Lage",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/17438221_1182736828505887_2613180367720415232_a.jpg",
+        "username": "victoriaalage"}], "count": 168}, "comments": {"data": [{"id":
+        "17855928154175039", "text": "You guys killed episode 2. Keep up the story
+        telling.", "created_time": "1494896223", "from": {"id": "250491199", "full_name":
+        "Ben Broos", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11350745_593662514105077_249833583_a.jpg",
+        "username": "bcbroos"}}, {"id": "17856074296192621", "text": "dope thespokentour",
+        "created_time": "1494920399", "from": {"id": "1092644727", "full_name": "Belly",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/11910344_755292157932813_1198281681_a.jpg",
+        "username": "andrew.belly"}}, {"id": "17869207228128862", "text": "\ud83d\udc4b",
+        "created_time": "1494947220", "from": {"id": "4757002592", "full_name": "GET
+        GIFT CARDS CODE \ud83c\udf89", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/18299791_1888480594730603_1266200025793298432_n.jpg",
+        "username": "travelgeopix"}}], "count": 3}, "can_view_comments": true, "can_delete_comments":
+        false, "type": "image", "link": "https://www.instagram.com/p/BUIjDayFH70/",
+        "location": null, "alt_media_url": null}, {"id": "1513321349611103952_4690018464",
+        "code": "BUAZb_ilabQ", "user": {"id": "4690018464", "full_name": "", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e15/c0.90.720.720/18444151_427283007648611_6045204621314490368_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e15/c0.90.720.720/18444151_427283007648611_6045204621314490368_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/e15/c0.90.720.720/18444151_427283007648611_6045204621314490368_n.jpg"}},
+        "created_time": "1494621984", "caption": {"id": "17868724375118605", "text":
+        "Va-va-vooming through Glenwood Canyon today.\n\u2022\n#DenverToPatagonia
+        #DTeam #biketouring #bikepacking #Colorado #GlenwoodCanyon", "created_time":
+        "1494621984", "from": {"id": "4690018464", "full_name": "", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "221351614", "full_name":
+        "MONTANUS", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/12407374_945739538796831_1438311600_a.jpg",
+        "username": "montanus_thewildside"}, {"id": "16785113", "full_name": "alexdmop",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11356644_1667443866834698_1323498885_a.jpg",
+        "username": "alexdmop"}, {"id": "258990627", "full_name": "Betsy Crosby",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11809647_926040674118932_1507255274_a.jpg",
+        "username": "betscrosby"}, {"id": "299477542", "full_name": "Jake Griffin",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11939387_427035784164033_821496156_a.jpg",
+        "username": "griffdaddy8"}], "count": 142}, "comments": {"data": [], "count":
+        0}, "can_view_comments": true, "can_delete_comments": false, "type": "video",
+        "link": "https://www.instagram.com/p/BUAZb_ilabQ/", "location": {"name": "Glenwood
+        Canyon"}, "alt_media_url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18488927_800450423444498_5293717526427992064_n.mp4",
+        "videos": {"standard_resolution": {"width": 640, "height": 800, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18470287_1902551373355159_7243311617121714176_n.mp4"},
+        "low_bandwidth": {"width": 480, "height": 600, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18470017_1797895647194321_662267382764404736_n.mp4"},
+        "low_resolution": {"width": 480, "height": 600, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18470017_1797895647194321_662267382764404736_n.mp4"}},
+        "video_views": 379}, {"id": "1511221216023148733_4690018464", "code": "BT477BuF_i9",
+        "user": {"id": "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e35/18443914_208305509685464_4272273672355446784_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e35/18443914_208305509685464_4272273672355446784_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/18443914_208305509685464_4272273672355446784_n.jpg"}},
+        "created_time": "1494371629", "caption": {"id": "17855435965173341", "text":
+        "We might be too proud to admit that the frontage road would have been better
+        than the backwoods bike path but we ain''t to proud to beg for a ride up Loveland
+        Pass after two hours of post holing with 80 pound bikes. May in Colorado,
+        you won today.\n\u2022\n#DTeam #DenverToPatagonia #biketouring #bikepacking
+        #colorado #frozentoes #postholing", "created_time": "1494371629", "from":
+        {"id": "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "465430978", "full_name":
+        "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11909187_1680241192198686_775913447_a.jpg",
+        "username": "pelliefurtado"}, {"id": "40966384", "full_name": "hannah gebhart:)",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/14676503_198895867215963_7495653822073667584_a.jpg",
+        "username": "_hannahgebhart_"}, {"id": "22039403", "full_name": "rachel strommen",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/13768213_1790329294529803_1136783608_a.jpg",
+        "username": "rachstrommen"}, {"id": "50136869", "full_name": "susiewinkles",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11410352_318746888249773_177324788_a.jpg",
+        "username": "susiewinkles"}], "count": 200}, "comments": {"data": [{"id":
+        "17880344458028747", "text": "@jake_and_the_beanstalk somehow, Ty''s camera
+        was actually weighing us both down.", "created_time": "1494595291", "from":
+        {"id": "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, {"id": "17874458305067383", "text": "@mountaingrown970
+        we can''t thank you and Melvin enough. Thanks for the lift and the conversation!",
+        "created_time": "1494595359", "from": {"id": "4690018464", "full_name": "",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, {"id": "17858786683142111", "text": "Isn''t
+        that cheating?  However, heaven knows that must be a brutal", "created_time":
+        "1494723033", "from": {"id": "5455478359", "full_name": "Paula Westhoff",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/18443781_1865271147067287_6383595503904358400_a.jpg",
+        "username": "pltraucht"}}, {"id": "17855943586180224", "text": "...brutal
+        ride in any kind of weather. Glad you got some help!", "created_time": "1494723086",
+        "from": {"id": "5455478359", "full_name": "Paula Westhoff", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/18443781_1865271147067287_6383595503904358400_a.jpg",
+        "username": "pltraucht"}}], "count": 9}, "can_view_comments": true, "can_delete_comments":
+        false, "type": "carousel", "link": "https://www.instagram.com/p/BT477BuF_i9/",
+        "location": {"name": "Keystone, Colorado"}, "alt_media_url": null, "carousel_media":
+        [{"images": {"thumbnail": {"width": 150, "height": 150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e35/18443914_208305509685464_4272273672355446784_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e35/18443914_208305509685464_4272273672355446784_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/18443914_208305509685464_4272273672355446784_n.jpg"}},
+        "users_in_photo": [], "type": "image"}, {"images": {"thumbnail": {"width":
+        150, "height": 150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e35/18382574_1492259817498881_2307482518489661440_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e35/18382574_1492259817498881_2307482518489661440_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/18382574_1492259817498881_2307482518489661440_n.jpg"}},
+        "users_in_photo": [], "type": "image"}]}, {"id": "1510593524697156803_4690018464",
+        "code": "BT2tM6nlEzD", "user": {"id": "4690018464", "full_name": "", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e35/c39.0.720.720/18380641_1911609652385124_7108161383002275840_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e35/c39.0.720.720/18380641_1911609652385124_7108161383002275840_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c39.0.720.720/18380641_1911609652385124_7108161383002275840_n.jpg"}},
+        "created_time": "1494296802", "caption": {"id": "17855367091171792", "text":
+        "40 miles down, 14,960ish to go.\n\u2022\n#bikepacking #biketouring #DTeam
+        #DenverToPatagonia #day1", "created_time": "1494296802", "from": {"id": "4690018464",
+        "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "17757942", "full_name":
+        "Caitlin C. Leibert", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16789267_1900122180231039_5315996604124102656_a.jpg",
+        "username": "farmfreshgal"}, {"id": "495886067", "full_name": "John Abizaid",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11850277_1509596935997623_41083414_a.jpg",
+        "username": "yoon_abizaid"}, {"id": "17583521", "full_name": "Brittany Rhodes",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/15803524_660002574171180_181610909699932160_a.jpg",
+        "username": "brittknee_rhodes"}, {"id": "174106726", "full_name": "whitdaddy123",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/13423516_1453743851318306_497354787_a.jpg",
+        "username": "whitdaddy123"}], "count": 247}, "comments": {"data": [{"id":
+        "17868318262118454", "text": "Get after it fellas!", "created_time": "1494299893",
+        "from": {"id": "1706727580", "full_name": "Matt Cairns", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/10979618_1580020808877439_886212387_a.jpg",
+        "username": "americanhitchhiker"}}, {"id": "17880236698026439", "text": "looking
+        forward to see pictures of this journey", "created_time": "1494341557", "from":
+        {"id": "15086860", "full_name": "Alvaro Meza", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/15034917_955378224568267_749379700463239168_a.jpg",
+        "username": "gonzalo12345"}}, {"id": "17879891170025930", "text": "Are y''all
+        sticking to mostly pavement?", "created_time": "1494887627", "from": {"id":
+        "184276105", "full_name": "Ally Mabry", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908568_1798965713759256_5304686022498451456_a.jpg",
+        "username": "a_mabry"}}, {"id": "17880768037061722", "text": "@a_mabry still
+        pedaling through CO so our gravel options have been pretty limited. Trying
+        to get on as much gravel as possible once we get to snow-free terrain.", "created_time":
+        "1494894204", "from": {"id": "4690018464", "full_name": "", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}], "count": 6}, "can_view_comments": true, "can_delete_comments":
+        false, "type": "image", "link": "https://www.instagram.com/p/BT2tM6nlEzD/",
+        "location": {"name": "Denver, Colorado"}, "alt_media_url": null}, {"id": "1506913159134831772_4690018464",
+        "code": "BTpoYjFl-Sc", "user": {"id": "4690018464", "full_name": "", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e15/c157.0.405.405/18252993_1379759158739323_5633424941048135680_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e15/c157.0.405.405/18252993_1379759158739323_5633424941048135680_n.jpg"},
+        "standard_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e15/c157.0.405.405/18252993_1379759158739323_5633424941048135680_n.jpg"}},
+        "created_time": "1493858068", "caption": {"id": "17879419771033208", "text":
+        "Digging deep here in the final installment of our interview miniseries. Trying
+        to answer that most elusive interrogation...\"why?\" Man, tough one. \"Why
+        wouldn''t ya!\"...an answer we would both be content with in most circumstances.
+        That didn''t seem to say it all in this case. And realistically, we probably
+        couldn''t find any combination of words that would, but we tried nonetheless.
+        Maybe we''ll be a little bit more succinct and poignant after a couple thousand
+        miles. \n#DenvertoPatagonia #DTeam #bikepacking #biketouring #whycycles #getoutthere
+        #dostuff", "created_time": "1493858068", "from": {"id": "4690018464", "full_name":
+        "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "1511505318", "full_name":
+        "Michael Riscica AIA", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/10693483_1522415507998518_1693293499_a.jpg",
+        "username": "biketouring999"}, {"id": "200706469", "full_name": "acmariani08",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/17333929_1868692880018439_1077301510074793984_a.jpg",
+        "username": "acmariani08"}, {"id": "16759958", "full_name": "Allie Finnegan",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/13267507_1111157252255769_2024515740_a.jpg",
+        "username": "afinnn"}, {"id": "10266062", "full_name": "hannah", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/17661862_694669287387911_269581976044830720_a.jpg",
+        "username": "hannadorable"}], "count": 81}, "comments": {"data": [{"id": "17857859854140425",
+        "text": "Because bikes are fun! Adventures build character and you''ll get
+        some great life experiences", "created_time": "1493858326", "from": {"id":
+        "196773865", "full_name": "andrea krushefski", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/14026597_1725114884407295_201515828_a.jpg",
+        "username": "akrush"}}], "count": 1}, "can_view_comments": true, "can_delete_comments":
+        false, "type": "video", "link": "https://www.instagram.com/p/BTpoYjFl-Sc/",
+        "location": null, "alt_media_url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18316941_406675199703205_8694822293278294016_n.mp4",
+        "videos": {"standard_resolution": {"width": 640, "height": 360, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18277278_290246171402005_7903221668431003648_n.mp4"},
+        "low_bandwidth": {"width": 480, "height": 270, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18315603_421189911574202_8632896204969082880_n.mp4"},
+        "low_resolution": {"width": 480, "height": 270, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18315603_421189911574202_8632896204969082880_n.mp4"}},
+        "video_views": 443}, {"id": "1504824309432253486_4690018464", "code": "BTiNbyNFPwu",
+        "user": {"id": "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e35/18095797_1602299006466397_6933626852829298688_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e35/18095797_1602299006466397_6933626852829298688_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/18095797_1602299006466397_6933626852829298688_n.jpg"}},
+        "created_time": "1493609058", "caption": {"id": "17867964226109680", "text":
+        "1 week out from our Denver departure date and all trails are clear of snow
+        and riding near mid-summer conditions! PSYCH! We just got blasted with a heavy
+        dose of winter this past week and it looks like we are going to be winter
+        camping our way through the state \u2744\ufe0f\ud83d\udeb2\u2603\ufe0f\u26fa\ufe0f\ud83d\uddfb\ud83d\udeb4\ud83c\udffd\n\u2022\n\ud83d\udcf7
+        @katemed \u2022\n#DenverToPatagonia #biketouring #bikepacking #DTeam #cowx
+        #winter", "created_time": "1493609058", "from": {"id": "4690018464", "full_name":
+        "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "22168005", "full_name":
+        "Crista Valentino", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/10831703_1505514399726611_1280534471_a.jpg",
+        "username": "cristaa_v"}, {"id": "177422865", "full_name": "cuppygrogan",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/17586804_198486217316422_6905182731831869440_a.jpg",
+        "username": "cuppygrogan"}, {"id": "361423533", "full_name": "LAIA GIMENO
+        ALEGRE", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/17075886_275113069588095_6066998376296087552_a.jpg",
+        "username": "laiagiimeno"}, {"id": "374904", "full_name": "David M Crabtree",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/14288113_1139180536173765_5516329722943897600_a.jpg",
+        "username": "davecrabtree"}], "count": 106}, "comments": {"data": [{"id":
+        "17854911124180233", "text": "Oh no.", "created_time": "1493646715", "from":
+        {"id": "23441209", "full_name": "Katie", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/1390275_596297593849038_1128716864_a.jpg",
+        "username": "katiedorn"}}, {"id": "17867820619108503", "text": "\ud83d\ude06\ud83d\ude06\ud83d\ude06\ud83d\ude06\ud83d\ude06",
+        "created_time": "1493684079", "from": {"id": "10240049", "full_name": "lauracrosby",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/11910043_463028583877271_1610677005_a.jpg",
+        "username": "lauracrosby"}}], "count": 2}, "can_view_comments": true, "can_delete_comments":
+        false, "type": "image", "link": "https://www.instagram.com/p/BTiNbyNFPwu/",
+        "location": {"name": "Loveland Pass"}, "alt_media_url": null}, {"id": "1501167143034915674_4690018464",
+        "code": "BTVN5AlFYta", "user": {"id": "4690018464", "full_name": "", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e15/c157.0.405.405/18160785_1892446417679025_6426835447934091264_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e15/c157.0.405.405/18160785_1892446417679025_6426835447934091264_n.jpg"},
+        "standard_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e15/c157.0.405.405/18160785_1892446417679025_6426835447934091264_n.jpg"}},
+        "created_time": "1493173090", "caption": {"id": "17867273932104059", "text":
+        "The first episode of our podcast The Spoken Tour is up! Give it a listen!
+        Website in bio.\n\u2022\n#biketouring #BikePacking #DenverToPatagonia #podcast
+        #DTeam", "created_time": "1493173090", "from": {"id": "4690018464", "full_name":
+        "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "52320727", "full_name":
+        "Shannon", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/10914683_1585542305010433_458502447_a.jpg",
+        "username": "sguscetti"}, {"id": "332771097", "full_name": "Charley", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11821710_964017550317769_446177482_a.jpg",
+        "username": "charleyo_"}, {"id": "6929881", "full_name": "HANNAH", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/14240644_1597449527216347_2058696193_a.jpg",
+        "username": "hannah.corinne"}, {"id": "30977097", "full_name": "Kyle Gardner",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/11906410_946088928784411_69825384_a.jpg",
+        "username": "kyleagardner"}], "count": 73}, "comments": {"data": [], "count":
+        0}, "can_view_comments": true, "can_delete_comments": false, "type": "video",
+        "link": "https://www.instagram.com/p/BTVN5AlFYta/", "location": {"name": "Denver,
+        Colorado"}, "alt_media_url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18137838_1669391016701814_8017300518118359040_n.mp4",
+        "videos": {"standard_resolution": {"width": 640, "height": 360, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18139329_120035781886324_6213478639653093376_n.mp4"},
+        "low_bandwidth": {"width": 480, "height": 270, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18189579_291356354630000_1364796617890201600_n.mp4"},
+        "low_resolution": {"width": 480, "height": 270, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18189579_291356354630000_1364796617890201600_n.mp4"}},
+        "video_views": 314}, {"id": "1499642263265327274_4690018464", "code": "BTPzLFoF7iq",
+        "user": {"id": "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e35/c135.0.810.810/18096419_818115555005875_4641106454210674688_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e35/c135.0.810.810/18096419_818115555005875_4641106454210674688_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c135.0.810.810/18096419_818115555005875_4641106454210674688_n.jpg"}},
+        "created_time": "1492991310", "caption": {"id": "17878395868007600", "text":
+        "Version 1 of @crosby.tommy''s #Patagonia bound rig. Cheers to 15,000 miles.\n\u2022\n#DTeam
+        #DenverToPatagonia #BikePacking #BikeTouring #Cowabunga", "created_time":
+        "1492991310", "from": {"id": "4690018464", "full_name": "", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "34196294", "full_name":
+        "bethleahy", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/11906221_636462836494521_473390404_a.jpg",
+        "username": "bethleahy"}, {"id": "210571406", "full_name": "Danny Stark",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/10471970_291753557664404_1362023575_a.jpg",
+        "username": "dtstark"}, {"id": "1322375848", "full_name": "David Milliken",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16230822_1225637567557807_618248542120574976_n.jpg",
+        "username": "davidmillikenphoto"}, {"id": "333483053", "full_name": "Tommy
+        Crosby", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/12677378_1332306963449555_281043116_a.jpg",
+        "username": "crosby.tommy"}], "count": 101}, "comments": {"data": [{"id":
+        "17855122720153374", "text": "Sick #cockpit and, of course, custom D-Bag",
+        "created_time": "1493001553", "from": {"id": "1445591482", "full_name": "Jake
+        Ward", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11821322_967448669965335_859501789_a.jpg",
+        "username": "jake_and_the_beanstalk"}}, {"id": "17854138477176921", "text":
+        "\ud83d\ude4c\ud83c\udffc", "created_time": "1493020437", "from": {"id": "33551755",
+        "full_name": "Jacqueline", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/18381821_293422774434156_5814109323223105536_a.jpg",
+        "username": "_jackien_"}}, {"id": "17855978884150575", "text": "Nice one!",
+        "created_time": "1493363965", "from": {"id": "40073420", "full_name": "Josh
+        Daiek", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16228746_1328354807244673_6648768657365139456_n.jpg",
+        "username": "joshdaiek"}}, {"id": "17873347228067011", "text": "Cool\ud83d\udc4a\ud83d\udc4a\ud83d\udc4a",
+        "created_time": "1493817934", "from": {"id": "1096950112", "full_name": "Adventure
+        is Waiting", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/15258875_1794177170848840_4341036669995057152_n.jpg",
+        "username": "nykona_fish"}}], "count": 6}, "can_view_comments": true, "can_delete_comments":
+        false, "type": "image", "link": "https://www.instagram.com/p/BTPzLFoF7iq/",
+        "location": {"name": "Denver, Colorado"}, "alt_media_url": null}, {"id": "1496041643979513858_4690018464",
+        "code": "BTDAfLmlyAC", "user": {"id": "4690018464", "full_name": "", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e15/c157.0.405.405/17883158_737458933082270_4884090634094247936_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e15/c157.0.405.405/17883158_737458933082270_4884090634094247936_n.jpg"},
+        "standard_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e15/c157.0.405.405/17883158_737458933082270_4884090634094247936_n.jpg"}},
+        "created_time": "1492562083", "caption": {"id": "17880415051019498", "text":
+        "After 7 years of adventuring and side-by-side companionship, while only 3
+        weeks out from a 15,000 bike trip, it seems like our \"friendship\" might
+        need to be reevaluated.\n\u2022\n#DenverToPatagonia #BikePacking #BikeTouring
+        #DTeam #Friends #Buds #OrAreWe?", "created_time": "1492562083", "from": {"id":
+        "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "8724011", "full_name":
+        "Rhiannon", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/17818162_202936386863890_2068688564534640640_a.jpg",
+        "username": "rhiannonmh"}, {"id": "14182792", "full_name": "Janie", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/17932448_449684002043910_9033461261769113600_a.jpg",
+        "username": "janiecactus"}, {"id": "194478705", "full_name": "Chelsey Larson",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11931048_1630028053906559_1793085374_a.jpg",
+        "username": "c_lard"}, {"id": "235937910", "full_name": "Kealani", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/13732233_636859726465807_1395352702_a.jpg",
+        "username": "caruso_kealani"}], "count": 80}, "comments": {"data": [], "count":
+        0}, "can_view_comments": true, "can_delete_comments": false, "type": "video",
+        "link": "https://www.instagram.com/p/BTDAfLmlyAC/", "location": {"name": "Denver,
+        Colorado"}, "alt_media_url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/17993394_283879662022805_642987085594099712_n.mp4",
+        "videos": {"standard_resolution": {"width": 640, "height": 360, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/17994106_190664848112334_6911575326795497472_n.mp4"},
+        "low_bandwidth": {"width": 480, "height": 270, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18029174_675768742608909_6922797350490472448_n.mp4"},
+        "low_resolution": {"width": 480, "height": 270, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/18029174_675768742608909_6922797350490472448_n.mp4"}},
+        "video_views": 380}, {"id": "1495880820346818941_4690018464", "code": "BTCb647F5F9",
+        "user": {"id": "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e35/c87.0.905.905/17932687_1071009146338609_11594058057121792_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e35/c87.0.905.905/17932687_1071009146338609_11594058057121792_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c87.0.905.905/17932687_1071009146338609_11594058057121792_n.jpg"}},
+        "created_time": "1492542911", "caption": {"id": "17853804442182596", "text":
+        "Sunrise over the Seuss-like landscapes of Santuario El Ca\u00f1i from our
+        last trip to Chile. Never would''ve known about this vista without some insider
+        tips, so if you''ve got any firsthand knowledge of spots like these we would
+        LOVE to hear about ''em! \nDrop us a pin at:\nwww.thespokentour.com/map\nWe''re
+        itching to see it again, and luckily it''s only about 13,500 miles from Denver--should
+        be there in no time! \n#DenvertoPatagonia #thespokentour #biketouring #bikepacking
+        #DTeam", "created_time": "1492542911", "from": {"id": "4690018464", "full_name":
+        "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "10240049", "full_name":
+        "lauracrosby", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/11910043_463028583877271_1610677005_a.jpg",
+        "username": "lauracrosby"}, {"id": "229528970", "full_name": "Boo", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/11372072_1698722753685102_381568150_a.jpg",
+        "username": "boo.crosby"}, {"id": "1511505318", "full_name": "Michael Riscica
+        AIA", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/10693483_1522415507998518_1693293499_a.jpg",
+        "username": "biketouring999"}, {"id": "8600475", "full_name": "Tyler Michael",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11375832_1484658395186636_1543664617_a.jpg",
+        "username": "t_y_l_e_r_michael"}], "count": 70}, "comments": {"data": [],
+        "count": 0}, "can_view_comments": true, "can_delete_comments": false, "type":
+        "image", "link": "https://www.instagram.com/p/BTCb647F5F9/", "location": null,
+        "alt_media_url": null}, {"id": "1490208927975281432_4690018464", "code": "BSuSR_hFRMY",
+        "user": {"id": "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e15/c157.0.405.405/17817914_686086968261627_3255812736260505600_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e15/c157.0.405.405/17817914_686086968261627_3255812736260505600_n.jpg"},
+        "standard_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e15/c157.0.405.405/17817914_686086968261627_3255812736260505600_n.jpg"}},
+        "created_time": "1491866769", "caption": {"id": "17866056145104201", "text":
+        "4 weeks from today the two of us are setting out to bicycle from #DenverToPatagonia.
+        We are stoked to share our trip with you through our #podcast The Spoken Tour.
+        Website in bio!\n\u2022\nShoutout to @jessimarko on the video!\n\u2022\n@t_y_l_e_r_michael
+        @crosby.tommy #biketouring #bikepacking #bicycle #denver #DTeam", "created_time":
+        "1491866769", "from": {"id": "4690018464", "full_name": "", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "290437885", "full_name":
+        "Aventon", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/12093682_797577737035958_811326215_a.jpg",
+        "username": "aventonbikes"}, {"id": "2215567505", "full_name": "Just Bike
+        It", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/11355734_524236324406344_1724574032_a.jpg",
+        "username": "justbikeit"}, {"id": "1666846443", "full_name": "Hiking\u2022Dreaming\u2022Photography",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/17662591_1314812558611061_8772015714719498240_a.jpg",
+        "username": "splicorice"}, {"id": "2209050782", "full_name": "Matt Cook",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/10954581_1547814052214291_790012119_a.jpg",
+        "username": "elevatedcapture"}], "count": 99}, "comments": {"data": [], "count":
+        0}, "can_view_comments": true, "can_delete_comments": false, "type": "video",
+        "link": "https://www.instagram.com/p/BSuSR_hFRMY/", "location": {"name": "Denver,
+        Colorado"}, "alt_media_url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/17886516_803904063097762_1069393186792669184_n.mp4",
+        "videos": {"standard_resolution": {"width": 640, "height": 360, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/17840948_256387971435822_7949840922794000384_n.mp4"},
+        "low_bandwidth": {"width": 480, "height": 270, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/17864337_279934102453649_254096449984266240_n.mp4"},
+        "low_resolution": {"width": 480, "height": 270, "url": "https://scontent-dft4-3.cdninstagram.com/t50.2886-16/17864337_279934102453649_254096449984266240_n.mp4"}},
+        "video_views": 395}, {"id": "1487325620161894675_4690018464", "code": "BSkCsV3FlkT",
+        "user": {"id": "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e35/c135.0.810.810/17818796_1888038611479093_8980680069366153216_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e35/c135.0.810.810/17818796_1888038611479093_8980680069366153216_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c135.0.810.810/17818796_1888038611479093_8980680069366153216_n.jpg"}},
+        "created_time": "1491523052", "caption": {"id": "17871194629071455", "text":
+        "The word \"ish\" has been used a lot during the planning of this trip. The
+        first 3,000ish miles of our ride south is through the desert. During the middle
+        of summer. \u2600\ufe0f\ud83d\udeb2\u2620\ufe0f\ud83c\udf35\n\u2022\n#Bikepacking
+        #DefendBearsEars #ProtectBearsEars #DTeam #DenverToPatagonia", "created_time":
+        "1491523052", "from": {"id": "4690018464", "full_name": "", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "1641137055", "full_name":
+        "Alexander Bochkov", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/10919226_1523142214632608_1989328620_a.jpg",
+        "username": "narmalna"}, {"id": "233725561", "full_name": "Kyle Gikling",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11809934_1684106005163575_1215595311_a.jpg",
+        "username": "kgikz"}, {"id": "208207097", "full_name": "Thomas J. Lotrecchiano",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/10598243_1478758075739199_718969392_a.jpg",
+        "username": "tomsconquest"}, {"id": "725096487", "full_name": "Erin Rebecca",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/18161605_201871300323209_5877628294643318784_a.jpg",
+        "username": "erin.rebecca1"}], "count": 66}, "comments": {"data": [{"id":
+        "17876994310048288", "text": "\ud83d\udc4d", "created_time": "1491610541",
+        "from": {"id": "420110", "full_name": "The Art Of Moving", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/14723093_1778761045701974_8279248335823437824_a.jpg",
+        "username": "theartofmoving"}}], "count": 1}, "can_view_comments": true, "can_delete_comments":
+        false, "type": "image", "link": "https://www.instagram.com/p/BSkCsV3FlkT/",
+        "location": {"name": "Canyonlands-Needles District, UT"}, "alt_media_url":
+        null}, {"id": "1480622554083661786_4690018464", "code": "BSMOl5Glpfa", "user":
+        {"id": "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e35/c0.135.1080.1080/17662325_1900084530276677_206090071508516864_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e35/c0.135.1080.1080/17662325_1900084530276677_206090071508516864_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c0.135.1080.1080/17662325_1900084530276677_206090071508516864_n.jpg"}},
+        "created_time": "1490723984", "caption": {"id": "17864873278108407", "text":
+        "Packed in about 10 liters of water and got rowdy in the desert for a few
+        days this past weekend. Also, bikepacking is a close relative of bike hiking.\n\u2022\n#DefendBearsEars
+        #ProtectBearsEars #Bikepacking #BikeHiking #DTeam #Moab #DenverToPatagonia",
+        "created_time": "1490723984", "from": {"id": "4690018464", "full_name": "",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "194411187", "full_name":
+        "kamtanita", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/14711939_136868126781653_3466403173286019072_a.jpg",
+        "username": "kamtanita"}, {"id": "4234880342", "full_name": "Erin Pratt",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/14487365_685056021671408_2465872180697628672_a.jpg",
+        "username": "crispyporkribs"}, {"id": "3954837471", "full_name": "Campton
+        Clothing Co.\u00ae", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16229048_1896269803935530_6325977525491073024_a.jpg",
+        "username": "camptonclothingcompany"}, {"id": "183982", "full_name": "Braxton
+        Adams", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16465105_1435159403185537_2493035387828568064_a.jpg",
+        "username": "braxadams"}], "count": 77}, "comments": {"data": [{"id": "17854775998139959",
+        "text": ".....just the beginning! Go dog go!", "created_time": "1490733165",
+        "from": {"id": "258990627", "full_name": "Betsy Crosby", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11809647_926040674118932_1507255274_a.jpg",
+        "username": "betscrosby"}}], "count": 1}, "can_view_comments": true, "can_delete_comments":
+        false, "type": "image", "link": "https://www.instagram.com/p/BSMOl5Glpfa/",
+        "location": {"name": "Bears Ears National Monument"}, "alt_media_url": null},
+        {"id": "1461759949831207687_4690018464", "code": "BRJNu38lPsH", "user": {"id":
+        "4690018464", "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e35/c135.0.810.810/17077382_763421000501509_5328026541232226304_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e35/c135.0.810.810/17077382_763421000501509_5328026541232226304_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c135.0.810.810/17077382_763421000501509_5328026541232226304_n.jpg"}},
+        "created_time": "1488475386", "caption": {"id": "17873538295009703", "text":
+        "@t_y_l_e_r_michael is well prepared to provide us with a meal every night
+        during our trip south. Here he is single handedly preparing two full grown
+        sheep. #DenverToPatagonia", "created_time": "1488475386", "from": {"id": "4690018464",
+        "full_name": "", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "208207097", "full_name":
+        "Thomas J. Lotrecchiano", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/10598243_1478758075739199_718969392_a.jpg",
+        "username": "tomsconquest"}, {"id": "1445591482", "full_name": "Jake Ward",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11821322_967448669965335_859501789_a.jpg",
+        "username": "jake_and_the_beanstalk"}, {"id": "420694889", "full_name": "Mike
+        Schutte", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/13258952_1375701062447332_2023581396_a.jpg",
+        "username": "tmikeschu"}, {"id": "8600475", "full_name": "Tyler Michael",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11375832_1484658395186636_1543664617_a.jpg",
+        "username": "t_y_l_e_r_michael"}], "count": 59}, "comments": {"data": [{"id":
+        "17875493164050122", "text": "Nice pic! Looks delicious!! The sheep yum!",
+        "created_time": "1490202904", "from": {"id": "1784356983", "full_name": "",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/14487372_1748650285455734_7562960825799933952_a.jpg",
+        "username": "christnt7"}}, {"id": "17856067765137847", "text": "Wow! Tyler,
+        you were holding back on your \ud83d\udc11 grill skills @ Joshua Tree. \ud83d\ude1d",
+        "created_time": "1492170286", "from": {"id": "17291567", "full_name": "Penguinefeed",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/17882466_1474799142562263_343927696729833472_a.jpg",
+        "username": "penguinefeed"}}], "count": 2}, "can_view_comments": true, "can_delete_comments":
+        false, "type": "image", "link": "https://www.instagram.com/p/BRJNu38lPsH/",
+        "location": null, "alt_media_url": null}, {"id": "1455919650315878613_4690018464",
+        "code": "BQ0dzVKlsDV", "user": {"id": "4690018464", "full_name": "", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}, "images": {"thumbnail": {"width": 150, "height":
+        150, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s150x150/e35/16906259_1432873057012165_5159932404713914368_n.jpg"},
+        "low_resolution": {"width": 320, "height": 320, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s320x320/e35/16906259_1432873057012165_5159932404713914368_n.jpg"},
+        "standard_resolution": {"width": 640, "height": 640, "url": "https://scontent-dft4-3.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/16906259_1432873057012165_5159932404713914368_n.jpg"}},
+        "created_time": "1487779168", "caption": {"id": "17850670267147512", "text":
+        "The adventure starts May 8th as we bicycle from #DenverToPatagonia!", "created_time":
+        "1487779168", "from": {"id": "4690018464", "full_name": "", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
+        "username": "thespokentour"}}, "likes": {"data": [{"id": "420694889", "full_name":
+        "Mike Schutte", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/13258952_1375701062447332_2023581396_a.jpg",
+        "username": "tmikeschu"}, {"id": "434830368", "full_name": "Tiffany Bush |
+        Yoga Teacher", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/13703103_1831125547118538_1992668786_a.jpg",
+        "username": "peacewarrioryogi"}, {"id": "8600475", "full_name": "Tyler Michael",
+        "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11375832_1484658395186636_1543664617_a.jpg",
+        "username": "t_y_l_e_r_michael"}, {"id": "2038017580", "full_name": "Elle.b
+        Salon", "profile_picture": "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/11098716_953885117964574_61517949_a.jpg",
+        "username": "ellebsalon"}], "count": 65}, "comments": {"data": [{"id": "17877589534034317",
+        "text": "If you make it to the Osa Peninsula coast in Costa Rica (near Corcovado
+        National Park), there are some secluded, shrouded-in-mist beaches that are
+        absolutely stunning, wild, and unique. No one else around. :)", "created_time":
+        "1492170612", "from": {"id": "17291567", "full_name": "Penguinefeed", "profile_picture":
+        "https://scontent-dft4-3.cdninstagram.com/t51.2885-19/s150x150/17882466_1474799142562263_343927696729833472_a.jpg",
+        "username": "penguinefeed"}}], "count": 1}, "can_view_comments": true, "can_delete_comments":
+        false, "type": "image", "link": "https://www.instagram.com/p/BQ0dzVKlsDV/",
+        "location": {"name": "Denver, Colorado"}, "alt_media_url": null}], "more_available":
+        false, "status": "ok"}'
     http_version: 
-  recorded_at: Sun, 26 Feb 2017 15:47:12 GMT
-- request:
-    method: get
-    uri: https://www.instagram.com/thespokentour/media/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v0.11.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Expires:
-      - Sat, 01 Jan 2000 00:00:00 GMT
-      Date:
-      - Sun, 26 Feb 2017 15:47:20 GMT
-      Content-Type:
-      - application/json
-      Content-Language:
-      - en
-      Vary:
-      - Cookie, Accept-Language, Accept-Encoding
-      Cache-Control:
-      - private, no-cache, no-store, must-revalidate
-      Strict-Transport-Security:
-      - max-age=86400
-      Pragma:
-      - no-cache
-      Set-Cookie:
-      - csrftoken=80pdRQmTwGhmH0Rmnseg7ZN1i1o7QRrN; expires=Sun, 25-Feb-2018 15:47:20
-        GMT; Max-Age=31449600; Path=/; Secure
-      - mid=WLL4iAAEAAHuXEDA-hMG0ouPi1p1; expires=Sat, 21-Feb-2037 15:47:20 GMT; Max-Age=630720000;
-        Path=/
-      - s_network=""; expires=Sun, 26-Feb-2017 16:47:20 GMT; Max-Age=3600; Path=/
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '798'
-    body:
-      encoding: ASCII-8BIT
-      string: '{"items": [{"code": "BQ0dzVKlsDV", "created_time": "1487779168", "user":
-        {"username": "thespokentour", "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
-        "full_name": "", "id": "4690018464"}, "location": {"name": "Denver, Colorado"},
-        "can_view_comments": true, "images": {"standard_resolution": {"url": "https://scontent-dft4-2.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/16906259_1432873057012165_5159932404713914368_n.jpg",
-        "height": 640, "width": 640}, "low_resolution": {"url": "https://scontent-dft4-2.cdninstagram.com/t51.2885-15/s320x320/e35/16906259_1432873057012165_5159932404713914368_n.jpg",
-        "height": 320, "width": 320}, "thumbnail": {"url": "https://scontent-dft4-2.cdninstagram.com/t51.2885-15/s150x150/e35/16906259_1432873057012165_5159932404713914368_n.jpg",
-        "height": 150, "width": 150}}, "link": "https://www.instagram.com/p/BQ0dzVKlsDV/",
-        "type": "image", "comments": {"count": 0, "data": []}, "alt_media_url": null,
-        "caption": {"created_time": "1487779168", "from": {"username": "thespokentour",
-        "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
-        "full_name": "", "id": "4690018464"}, "text": "The adventure starts May 8th
-        as we bicycle from #DenverToPatagonia!", "id": "17850670267147512"}, "can_delete_comments":
-        false, "likes": {"count": 5, "data": [{"username": "peacewarriorfitness",
-        "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/13703103_1831125547118538_1992668786_a.jpg",
-        "full_name": "Tiffany Bush | Yoga Teacher", "id": "434830368"}, {"username":
-        "thespokentour", "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/s150x150/16908900_863383370431397_7166125802067591168_a.jpg",
-        "full_name": "", "id": "4690018464"}, {"username": "t_y_l_e_r_michael", "profile_picture":
-        "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/11375832_1484658395186636_1543664617_a.jpg",
-        "full_name": "Tyler Michael", "id": "8600475"}, {"username": "ellebsalon",
-        "profile_picture": "https://scontent-dft4-2.cdninstagram.com/t51.2885-19/11098716_953885117964574_61517949_a.jpg",
-        "full_name": "Elle.b Salon", "id": "2038017580"}]}, "id": "1455919650315878613_4690018464"}],
-        "status": "ok", "more_available": false}'
-    http_version: 
-  recorded_at: Sun, 26 Feb 2017 15:47:19 GMT
+  recorded_at: Tue, 16 May 2017 15:50:01 GMT
 recorded_with: VCR 3.0.3
