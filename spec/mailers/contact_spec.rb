@@ -14,7 +14,6 @@ RSpec.describe ContactMailer, type: :mailer do
       end
 
       expect(message.to).to eq ["thespokentour@gmail.com"]
-      expect(message.from).to eq ["tommy@crosby.com"]
       expect(message.subject).to eq "New message!" 
       expect(message.to_s).to include "Hey Spokers!" 
       expect(message.to_s).to include "From: Tyler" 
