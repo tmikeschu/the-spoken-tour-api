@@ -3,7 +3,8 @@ class Api::V1::CurrentLocationPinController < ApplicationController
     latest_location = InreachService.latest_coordinates
     if latest_location
       RouteBuilder.add_or_update_todays_location(latest_location)
-      render json: latest_location, status: 201
+      current = CurrentLocationPin.where.not(lng: 0, lat: 0).by_date.last
+      render json: current, status: 201
     else
       render json: "Error retrieving data"
     end

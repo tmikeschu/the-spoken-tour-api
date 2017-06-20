@@ -13,7 +13,7 @@ RSpec.describe "Current Location Pins API" do
         expect(response).to be_success
 
         json_pin      = JSON.parse(response.body, symbolize_names: true)
-        expected_keys = [:location, :date]
+        expected_keys = [:location, :date, :id]
 
         expect(json_pin.keys).to match_array(expected_keys)
       end
