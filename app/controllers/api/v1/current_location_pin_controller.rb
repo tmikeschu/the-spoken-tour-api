@@ -20,7 +20,7 @@ class Api::V1::CurrentLocationPinController < ApplicationController
   end
 
   def index
-    @points = CurrentLocationPin.by_date
+    @points = CurrentLocationPin.where.not(lat: 0, lng: 0).by_date
     render json: @points
   end
 
