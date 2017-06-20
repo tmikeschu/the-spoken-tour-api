@@ -5,6 +5,8 @@ class RouteBuilder
 
   def add_or_update_todays_location(location_data)
     @lat_lng = location_data[:location]
+    return if @lat_lng[:lat] == 0 && @lat_lng[:lng] == 0
+
     todays_location = CurrentLocationPin
       .find_by("DATE(created_at) = ?", Time.now.utc.to_date)
 
