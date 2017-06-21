@@ -19,11 +19,12 @@ class Api::V1::SuggestionPinsController < ApplicationController
   end
 
   private
-    def pin_params
-      strong = params.require(:pin).permit(
-        :label, :lat, :lng, :description, :message, :category, :email, :name
-      ).to_h
-      strong["category"] = strong["category"].to_i if strong["category"]
-      strong
-    end
+
+  def pin_params
+    strong = params.require(:pin).permit(
+      :label, :lat, :lng, :description, :message, :category, :email, :name
+    ).to_h
+    strong["category"] = strong["category"].to_i if strong["category"]
+    strong
+  end
 end

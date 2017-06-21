@@ -14,19 +14,20 @@ class InstagramService
   end
 
   private
-    def conn
-      @conn ||= Faraday.new("https://www.instagram.com")
-    end
 
-    def default_path
-      "/thespokentour/media/"
-    end
+  def conn
+    @conn ||= Faraday.new("https://www.instagram.com")
+  end
 
-    def response
-      conn.get(default_path)
-    end
+  def default_path
+    "/thespokentour/media/"
+  end
 
-    def json
-      JSON.parse(response.body, symbolize_names: true)
-    end
+  def response
+    conn.get(default_path)
+  end
+
+  def json
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end

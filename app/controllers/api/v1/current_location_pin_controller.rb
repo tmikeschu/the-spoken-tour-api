@@ -1,10 +1,9 @@
 class Api::V1::CurrentLocationPinController < ApplicationController
   def show
-    latest_location = InreachService.latest_coordinates
-    if latest_location
-      RouteBuilder.add_or_update_todays_location(latest_location)
-      current = CurrentLocationPin.where.not(lng: 0, lat: 0).by_date.last
-      render json: current, status: 201
+    latest_coordinates = InreachService.latest_coordinates
+    if latest_coordinates
+      RouteBuilder.add_or_update_todays_location(latest_coordinates)
+      render json: CurrentLocationPin.latest, status: 201
     else
       render json: "Error retrieving data"
     end
@@ -20,13 +19,13 @@ class Api::V1::CurrentLocationPinController < ApplicationController
   end
 
   def index
-    @points = CurrentLocationPin.where.not(lat: 0, lng: 0).by_date
-    render json: @points
+    render json: CurrentLocationPin.by_date
   end
 
   private
-    def pin_params
-      params.require(:pin).permit(:lat, :lng)
-    end
+
+  def pin_params
+    params.require(:pin).permit(:lat, :lng)
+  end
 end
 

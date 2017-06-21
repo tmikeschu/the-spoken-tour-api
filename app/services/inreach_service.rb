@@ -13,30 +13,31 @@ class InreachService
   end
 
   private 
-    def conn
-      @conn ||= Faraday.new("https://inreach.garmin.com")
-      @conn.basic_auth(ENV["inreach_user"], ENV["inreach_pw"])
-      @conn
-    end
 
-    def response
-      conn.get("/feed/Share/TommyCrosby")
-    end
+  def conn
+    @conn ||= Faraday.new("https://inreach.garmin.com")
+    @conn.basic_auth(ENV["inreach_user"], ENV["inreach_pw"])
+    @conn
+  end
 
-    def response_data
-      response.body
-    end
+  def response
+    conn.get("/feed/Share/TommyCrosby")
+  end
 
-    def latitude
-      Nokogiri.XML(response_data).css("Data[name='Latitude'] value").text.to_d
-    end
+  def response_data
+    response.body
+  end
 
-    def longitude
-      Nokogiri.XML(response_data).css("Data[name='Longitude'] value").text.to_d
-    end
+  def latitude
+    Nokogiri.XML(response_data).css("Data[name='Latitude'] value").text.to_d
+  end
 
-    def date
-      Nokogiri.XML(response_data).css("Data[name='Time'] value").text
-    end
+  def longitude
+    Nokogiri.XML(response_data).css("Data[name='Longitude'] value").text.to_d
+  end
+
+  def date
+    Nokogiri.XML(response_data).css("Data[name='Time'] value").text
+  end
 end
 

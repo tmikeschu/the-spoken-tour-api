@@ -26,4 +26,41 @@ RSpec.describe CurrentLocationPin, type: :model do
       expect(ids).to eq [pin2.id, pin1.id, pin3.id]
     end
   end
+
+  describe "default scope" do
+    before do
+      create(:current_location_pin, lat: 0, lng: 0)
+      create(:current_location_pin)
+    end
+
+    it "filters out points with 0, 0 for lat and lng" do
+      expect(CurrentLocationPin.count).to eq 1
+    end
+
+    it "can be unscoped" do
+      expect(CurrentLocationPin.unscoped.count).to eq 2
+    end
+  end
+
+  describe ".for_date" do
+    it "returns pin for the current date if pin exists" do
+      pin = create(:current_location_pin)
+      expect(CurrentLocationPin.for_date(pin.created_at)).to eq pin
+    end
+
+    it "returns nil if pin does not exist" do
+      expect(CurrentLocationPin.for_date(Time.now)).to be nil
+    end
+  end
+
+  describe ".latest" do
+    it "returns most recent pin by date" do
+      create(:current_location_pin, created_at: Time.now.utc - 1.day)
+      create(:current_location_pin, created_at: Time.now.utc)
+      pin3 = create(:current_location_pin, created_at: Time.now.utc + 1.day)
+      create(:current_location_pin, created_at: Time.now.utc + 1.day, lat: 0, lng: 0)
+
+      expect(CurrentLocationPin.latest).to eq pin3
+    end
+  end
 end

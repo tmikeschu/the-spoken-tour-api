@@ -4,17 +4,31 @@ class RouteBuilder
   end
 
   def add_or_update_todays_location(location_data)
-    @lat_lng = location_data[:location]
-    return if @lat_lng[:lat] == 0 && @lat_lng[:lng] == 0
+    lat_lng         = location_data[:location]
+    bad_data        = lat_lng[:lat] == 0 && lat_lng[:lng] == 0
+    todays_location = CurrentLocationPin.for_date(Time.now)
 
-    todays_location = CurrentLocationPin
-      .find_by("DATE(created_at) = ?", Time.now.utc.to_date)
+    check_data[bad_data].call(todays_location, lat_lng)
+  end
 
-    if todays_location
-      todays_location.update(@lat_lng)
-    else
-      CurrentLocationPin.create!(@lat_lng)
+  def create_or_update
+    -> todays_location, lat_lng do
+      (todays_location && todays_location.update(lat_lng)) ||
+        CurrentLocationPin.create!(lat_lng)
     end
+  end
+
+  private
+
+  def check_data
+    {
+      true  => no_change,
+      false => create_or_update
+    }
+  end
+
+  def no_change
+    -> todays_location, _ { todays_location }
   end
 end
 
