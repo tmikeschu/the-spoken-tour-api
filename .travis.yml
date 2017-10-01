@@ -1,0 +1,10 @@
+language: ruby
+services:
+  - postgresql
+env:
+  - TEST_DIRECTORY=spec/
+before_script:
+  - psql -c 'create database spoken_api_test;' -U postgres
+script:
+  - xvfb-run bundle exec rspec $TEST_DIRECTORY
+cache: bundler
