@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tmikeschu/the-spoken-tour-api.svg?branch=master)](https://travis-ci.org/tmikeschu/the-spoken-tour-api)
+
 # API for [The Spoken Tour](http://www.thespokentour.com/)
 
 This is a simple API built with Rails and for a front-end React application.
