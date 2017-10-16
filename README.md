@@ -37,7 +37,7 @@ First things first: get a dopamine hit from a verdant test suite! Run the tests 
 bundle exec rspec
 ```
 
-then *read* the tests to get oriented with the application.
+Then *read* the tests to get oriented with the application.
 
 ## Local Development
 
@@ -72,7 +72,7 @@ Interested in helping out?
 1. Reach out to me and say hello! I'd love to hear about what you're interested
    in.
 
-2. Once we've confirmed what you can work on, fork this repo and work on you
+2. Once we've confirmed what you can work on, fork this repo and work on your
    masterpiece.
 
 3. Once your work is done, squash your work to a single commit, and open a PR
