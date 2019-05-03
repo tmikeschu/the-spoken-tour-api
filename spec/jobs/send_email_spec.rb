@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe SendEmailJob, :type => :job do
   include ActiveJob::TestHelper
 
-  let(:pin) { FactoryGirl.create(:suggestion_pin) }
+  let(:pin) { FactoryBot.create(:suggestion_pin) }
   subject(:job) { described_class.perform_later(pin) }
 
   before do

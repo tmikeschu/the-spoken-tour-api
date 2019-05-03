@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :suggestion_pin do
     label           { Faker::Hipster.word }
     description     { Faker::Hipster.sentence }
