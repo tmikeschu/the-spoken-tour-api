@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem "rails", "~> 5.0.1"
+gem "rails", "~> 5.2.4.5"
 gem "pg", "~> 0.18"
 gem "puma", "~> 4.3"
 gem "active_model_serializers", "~> 0.10.0"
@@ -24,6 +24,7 @@ group :development, :test do
   gem "shoulda-matchers", "~> 3.1"
   gem "capybara"
   gem "launchy"
+  gem 'rubocop-faker'
 end
 
 group :development do
