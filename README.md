@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/tmikeschu/the-spoken-tour-api.svg?branch=master)](https://travis-ci.org/tmikeschu/the-spoken-tour-api)
+[![Build Status](https://app.travis-ci.com/tmikeschu/the-spoken-tour-api.svg?branch=master)](https://app.travis-ci.com/tmikeschu/the-spoken-tour-api)
 
 # API for [The Spoken Tour](http://www.thespokentour.com/)
 
