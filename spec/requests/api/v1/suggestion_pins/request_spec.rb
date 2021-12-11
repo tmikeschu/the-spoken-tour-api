@@ -11,7 +11,7 @@ RSpec.describe "Suggestion Pins API" do
 
       get api_v1_suggestion_pins_path
 
-      expect(response).to be_success
+      expect(response).to be_successful
 
       pins = JSON.parse(response.body, symbolize_names: true)
       pin  = pins.first
@@ -42,7 +42,7 @@ RSpec.describe "Suggestion Pins API" do
 
       post api_v1_suggestion_pins_path, params: pin_params
 
-      expect(response).to be_success
+      expect(response).to be_successful
       expect(response.status).to eq 201
 
       json_pin = JSON.parse(response.body, symbolize_names: true)
@@ -68,7 +68,7 @@ RSpec.describe "Suggestion Pins API" do
 
       get api_v1_suggestion_pin_path(pin)
 
-      expect(response).to be_success
+      expect(response).to be_successful
 
       json_pin = JSON.parse(response.body, symbolize_names: true)
       db_pin   = SuggestionPin.last

@@ -14,7 +14,7 @@ RSpec.describe "Contact API" do
     it "returns a 201 if successful" do
       post api_v1_contact_path, params: contact
 
-      expect(response).to be_success
+      expect(response).to be_successful
       expect(response.status).to eq 201
       expect(response.body).to eq ({message: "Message Sent!"}).to_json
     end

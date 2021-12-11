@@ -10,7 +10,7 @@ RSpec.describe "Current Location Pins API" do
       VCR.use_cassette("inreach") do
         get api_v1_current_location_path
 
-        expect(response).to be_success
+        expect(response).to be_successful
 
         json_pin      = JSON.parse(response.body, symbolize_names: true)
         expected_keys = [:location, :date, :id]
@@ -57,7 +57,7 @@ RSpec.describe "Current Location Pins API" do
 
       post api_v1_current_location_path, params: { pin: pin_params }
 
-      expect(response).to be_success
+      expect(response).to be_successful
       expect(response.status).to eq 201
 
       json_pin      = JSON.parse(response.body, symbolize_names: true)
@@ -78,7 +78,7 @@ RSpec.describe "Current Location Pins API" do
 
       get api_v1_actual_path_path
 
-      expect(response).to be_success
+      expect(response).to be_successful
 
       points = JSON.parse(response.body, symbolize_names: true)
       expected_keys = [:location, :date, :id]

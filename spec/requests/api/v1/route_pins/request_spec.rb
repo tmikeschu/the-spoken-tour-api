@@ -10,7 +10,7 @@ RSpec.describe "Route Pins API", type: :request do
     it "returns a collection of lat and lng points" do
       get api_v1_route_pins_path
 
-      expect(response).to be_success
+      expect(response).to be_successful
 
       points   = JSON.parse(response.body, symbolize_names: true)
       point    = points.first
