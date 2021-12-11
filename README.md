@@ -50,7 +50,7 @@ open http://localhost:3000
 
 ## Stack
 
-Languages: [Ruby](http://ruby-doc.org/) `2.3.3`
+Languages: [Ruby](http://ruby-doc.org/)
 DBs: [Postgresql](https://www.postgresql.org/docs/)
 Frameworks: [Rails](http://guides.rubyonrails.org/) (API only) `5.0.1`
 Major Libraries:
